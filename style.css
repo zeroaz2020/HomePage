@@ -142,7 +142,7 @@ p {
 }
 
 .navbar__menu__item.active:hover {
-    border: 1px solid var(--color-dark-pink);;
+    border: 1px solid var(--color-dark-pink);
 }
 
 .navbar__toggle-btn {
@@ -184,8 +184,8 @@ p {
 }
 
 .home__contact:hover {
-    background-color: var(--color-dark-pink);
-    border: 2px solid var(--color-dark-pink);
+    background-color: var(--color-orange);
+    /*border: 2px solid var(--color-dark-pink);*/
 }
 
 /* Section common */
@@ -311,8 +311,9 @@ p {
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
-    display: inline-flex;
-    align-items: center;
+    position: relative;
+    /*display: inline-flex;*/
+    /*align-items: center;*/
 }
 
 .category__btn.selected,
@@ -325,7 +326,7 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
     opacity: 1;
-    top: 0;
+    top: 7px;
 }
 
 .category__count {
@@ -336,9 +337,9 @@ p {
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    position: relative;
-    top: -20px;
-    left: 4px;
+    position: absolute;
+    top: -5px;
+    right: 16px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
     font-size: var(--font-micro)
@@ -463,7 +464,7 @@ p {
 
 .contact__links i:hover {
     transform: scale(1.1);
-    color: var(--color-dark-pink);
+    color: var(--color-white);
 }
 
 /* Scroll up */
@@ -484,6 +485,7 @@ p {
 
 .arrow-up:hover {
     background-color: var(--color-dark-pink);
+    color: var(--color-white);
 }
 
 .arrow-up.visible {
@@ -493,8 +495,20 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {
+        /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
+
     .navbar__toggle-btn {
         display: block;
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
     }
 
     #navbar {
@@ -516,22 +530,53 @@ p {
         display: block;
     }
 
+    .section {
+        padding: 16px;
+        padding-top: 40px;
+    }
+
     .about__majors {
         flex-direction: column;
-        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 
     .major {
         align-items: center;
         width: 100%;
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
 
     .skillset {
         flex-direction: column;
     }
 
+    .category__btn.selected .category__count,
+    .category__btn:hover .category__count {
+        top: 5px;
+    }
+
+    .category__btn {
+        padding: 8px 0;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .work__categories {
+        margin: 20px 0 5px;
+    }
+
     .project {
         flex-grow: 1;
+        margin: 5px 0;
+    }
+
+    .arrow-up {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+        line-height: 35px;
+        right: 5px;
+        bottom: 15px;
     }
 }
