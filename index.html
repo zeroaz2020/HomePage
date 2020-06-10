@@ -21,15 +21,19 @@
         <i class="fab fa-diaspora"></i>
         <a href="#">GyeCheol</a>
     </div>
-    <div class="navbar__menu">
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
-    </div>
+    <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Contact</li>
+    </ul>
+
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
 </nav>
 <!-- Home -->
 <section id="home">
@@ -66,7 +70,7 @@
                 Publishing
             </h2>
             <div class="major__description">
-                HTML5, CSS3(Flexbox, Grid), SASS, Responsive web, Mobile web
+                HTML5, CSS3, SASS, Responsive web, Mobile web
             </div>
         </div>
         <!-- Development -->
@@ -203,6 +207,7 @@
                     <h3 class="skillset__title">Etc</h3>
                     <ul class="etc__list">
                         <li><span>Git</span></li>
+                        <li><span>SourceTree</span></li>
                         <li><span>Swagger</span></li>
                         <li><span>Nikcon D100</span></li>
                         <li><span>SONY A6000</span></li>
@@ -214,66 +219,69 @@
 </section>
 <!-- My work -->
 <section id="work" class="section">
-    <h1>My work</h1>
-    <h3>Projects</h3>
-    <div class="work__categories">
-        <button class="category__btn active">
-            All<span class="category__count">14</span>
-        </button>
-        <button class="category__btn">
-            Design
-            <span class="category__count">5</span>
-        </button>
-        <button class="category__btn">
-            Publishing
-            <span class="category__count">5</span>
-        </button>
-        <button class="category__btn">
-            Development
-            <span class="category__count">4</span>
-        </button>
-    </div>
+    <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+            <button class="category__btn active">
+                All<span class="category__count">14</span>
+            </button>
+            <button class="category__btn">
+                Design
+                <span class="category__count">5</span>
+            </button>
+            <button class="category__btn">
+                Publishing
+                <span class="category__count">5</span>
+            </button>
+            <button class="category__btn">
+                Development
+                <span class="category__count">4</span>
+            </button>
+        </div>
 
-    <div class="work__projects">
-        <a href="" class="project" target="_blank">
-            <img src="imgs/projects/tnbox.png" alt="TN-BOX">
-            <div class="project__description">
-                <h3>TN-BOX</h3>
-                <span>프린터 임대 서비스 통합관리 솔루션</span>
-            </div>
-        </a>
+        <div class="work__projects">
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/tnbox.png" alt="TN-BOX">
+                <div class="project__description">
+                    <h3>TN-BOX</h3>
+                    <span>프린터 임대 서비스 통합관리 솔루션</span>
+                    <p>Design, Publishing, Vue.js</p>
+                </div>
+            </a>
 
-        <a href="" class="project" target="_blank">
-            <img src="imgs/projects/" alt="Vue CRUD App">
-            <div class="project__description">
-                <h3>Vue CRUD App</h3>
-                <span>Vue CRUD App</span>
-            </div>
-        </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/" alt="Vue CRUD App">
+                <div class="project__description">
+                    <h3>Vue CRUD App</h3>
+                    <span>Vue CRUD App</span>
+                </div>
+            </a>
 
-        <a href="" class="project" target="_blank">
-            <img src="imgs/projects/" alt="Vue Todo App">
-            <div class="project__description">
-                <h3>Vue Todo App</h3>
-                <span>Vue Todo App</span>
-            </div>
-        </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/" alt="Vue Todo App">
+                <div class="project__description">
+                    <h3>Vue Todo App</h3>
+                    <span>Vue Todo App</span>
+                </div>
+            </a>
 
-        <a href="" class="project" target="_blank">
-            <img src="imgs/projects/" alt="Vue Movie App">
-            <div class="project__description">
-                <h3>Vue Movie App</h3>
-                <span>Vue Movie App</span>
-            </div>
-        </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/" alt="Vue Movie App">
+                <div class="project__description">
+                    <h3>Vue Movie App</h3>
+                    <span>Vue Movie App</span>
+                </div>
+            </a>
 
-        <a href="" class="project" target="_blank">
-            <img src="imgs/projects/" alt="MegaBox">
-            <div class="project__description">
-                <h3>MegaBox</h3>
-                <span>MegaBox</span>
-            </div>
-        </a>
+            <a href="" class="project" target="_blank">
+                <img src="imgs/projects/" alt="MegaBox">
+                <div class="project__description">
+                    <h3>MegaBox</h3>
+                    <span>MegaBox</span>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
 <!-- Contact -->
